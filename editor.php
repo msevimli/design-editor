@@ -184,9 +184,9 @@ class reklamshopEditor {
 
                     <i class="fas fa-upload"></i><span> Upload</span>
                 </div>
-                <div class="upload-buttons-container">
+                <div class="upload-buttons-container" id="upload-buttons-container">
                     <div class="upload-button-cover">
-                        <input type="button" value="Image" class="green-btn">
+                        <input type="button" id="upload-image" value="Image" class="green-btn">
                     </div>
                     <div class="upload-button-cover">
                         <input type="button" value="Font" class="green-btn">
@@ -209,21 +209,21 @@ class reklamshopEditor {
         <button id="freedrawing">Free Drawing</button>
         <input type="file" id="myfile" name="myfile" accept="image/png, image/jpeg">
 
-        <form action="#" class="dropzone" id="myAwesomeDropzone">
-            <div class="fallback">
-                <input name="file" type="file" multiple />
-            </div>
-        </form>
         <!-- Trigger/Open The Modal -->
         <button id="myBtn">Open Modal</button>
 
         <!-- The Modal -->
-        <div id="myModal" class="modal">
-
+        <div id="upload-modal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <div class="drop-file-cover">
+                    <form action="#" class="dropzone" id="myAwesomeDropzone">
+                        <div class="fallback">
+                            <input name="file" type="file" multiple />
+                        </div>
+                    </form>
+                </div>
             </div>
 
         </div>

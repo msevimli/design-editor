@@ -1,8 +1,8 @@
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("upload-modal");
 
 // Get the button that opens the modal
-var btnTT = document.getElementById("myBtn");
+var btnTT = document.getElementById("upload-image");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -24,5 +24,7 @@ span.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        var element = document.getElementById("upload-buttons-container");
+        element.classList.remove("inShow");
     }
 }

@@ -567,6 +567,10 @@ myDropzone.on("queuecomplete", function(file, res) {
             magic.editor.add(img.set({ left: 50, top: 50 }).scale(0.50));
         });
         magic.editor.renderAll();
+        var element = document.getElementById("upload-buttons-container");
+        element.classList.remove("inShow");
+        var modal = document.getElementById("upload-modal");
+        modal.style.display="none";
     }
 });
 
