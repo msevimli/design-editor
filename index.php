@@ -1,3 +1,3 @@
 <?php 
-// test ubunut -
+// test web
 exit;
