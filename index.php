@@ -1,2 +1,3 @@
 <?php
+ // by web
 exit;
