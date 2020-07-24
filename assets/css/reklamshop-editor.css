@@ -1,0 +1,208 @@
+/*
+    custom fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    End of custom fonts
+*/
+.entry-title {
+    display: none;
+}
+.reklamshop-editor-cover {
+    position: relative;
+    padding: 1%;
+    background-color: #696969;
+    width: 100%;
+    height: 500px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    display: inline-flex;
+}
+.reklamshop-editor-inside {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display:inline-block;
+}
+.reklamshop-editor-area {
+    position: relative;
+    width: 500px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px 1px #3c3c3c;
+}
+.editor-tools-top {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #23282d;
+    top:0px;
+    display: table;
+}
+
+.editor-tools-side {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    background-color: #23282d;
+    display: inline-block;
+    top: 0px;
+}
+.reklamshop-editor-area canvas {
+    position: relative;
+}
+.editor-tools-grid {
+    position: relative;
+    min-width: 30px;
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+.editor-full-screen-ico {
+    color: white;
+}
+.editor-fullScreen {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    z-index: 999 !important;
+}
+.editor-tools-input {
+    padding: 1px;
+    width: 50px;
+    height: 30px;
+}
+.editor-tools-row-head {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.editor-tools-row {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    display: inline-block;
+}
+.editor-tools-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border:1px solid #1a1a1a;
+}
+.editor-tools-item:hover {
+    background-color: #0f834d;
+}
+.tool-active {
+    background-color: #0f834d;
+}
+.editor-control-panel {
+    background-color: #23282d;
+    border: 1px solid #3575ff;
+    display: none;
+    width: 200px;
+    /*height: 100px; */
+    box-shadow: 0px 0px 4px black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.upload-button-area {
+    position: relative;
+    height: 100%;
+    width: 150px;
+}
+#upload-menu-button {
+    background-color: #5dbf15;
+    color: white;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* height: 50px; */
+    padding: 7%;
+    text-align: center;
+    cursor: pointer;
+}
+.upload-buttons-container {
+    width: 100%;
+    height: 324px;
+    background-color: #23282d;
+    position: relative;
+    bottom: 55px;
+    /* right: -25px; */
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #3575ff;
+    display: none;
+}
+.upload-button-cover {
+    width: 100%;
+    position: relative;
+    margin: 5px;
+
+}
+.upload-button-cover:first-child {
+    margin-top: 15px;
+}
+.upload-button-cover input[type="button"] {
+    width: 93%;
+}
+.inShow {
+    display: table;
+}
+.green-btn {
+    background-color: #5dbf15 !important;
+    border-radius: 5px !important;
+    border: 1px solid #f7f7f7 !important;
+}
+.editor-control-panel hr {
+    margin-bottom: 0;
+}
+.ecp-row {
+    display: block;
+}
+.ecp-icon {
+    display: inline-block;
+    color: white;
+    margin: 5px;
+}
+.ecp-font-size {
+    width: 55px;
+    height: 20px;
+}
+.ecp-font-family {
+    width: 107px;
+}
