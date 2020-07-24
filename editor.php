@@ -28,10 +28,12 @@ class reklamshopEditor {
             wp_enqueue_style('reklamshop-editor-style', plugins_url('assets/css/reklamshop-editor.css', __FILE__), true, 1.0);
             wp_enqueue_style('dropzone-css', plugins_url('assets/css/dropzone.min.css', __FILE__), true, 5.7);
             wp_enqueue_style('animate-css', plugins_url('assets/css/animate.min.css', __FILE__), true, 4.0);
+            wp_enqueue_style('modal-css', plugins_url('assets/css/modal.css', __FILE__), true, 1.0);
 
             wp_enqueue_script('fabric-js', plugins_url('assets/js/fabric.min.js', __FILE__), true, 3.6);
             wp_enqueue_script('dropzone-js', plugins_url('assets/js/dropzone.min.js', __FILE__), true, 5.7);
             wp_enqueue_script('reklamshop-editor-js', plugins_url('assets/js/reklamshop-editor.js', __FILE__), true, 1.0);
+            wp_enqueue_script('reklamshop-editor-modal-js', plugins_url('assets/js/modal.js', __FILE__), true, 1.0,true);
 
             wp_enqueue_script('font-face-observer', plugins_url('assets/js/fontfaceobserver.js', __FILE__), true, 2.1);
             wp_enqueue_script('open-type-js', plugins_url('assets/js/opentype.min.js', __FILE__), true, 1.3);
@@ -212,6 +214,19 @@ class reklamshopEditor {
                 <input name="file" type="file" multiple />
             </div>
         </form>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+
+        </div>
         <?php
     }
 }
