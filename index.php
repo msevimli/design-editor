@@ -1,3 +1,2 @@
 <?php
-// By M
 exit;
