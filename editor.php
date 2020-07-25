@@ -16,7 +16,10 @@ class reklamshopEditor {
     {
         add_action('wp_enqueue_scripts',array($this,'require_files'));
         add_action('the_content',array($this,'hook_editor'));
-        add_action('reklamshop_editor',array($this,'init_editor'));
+        //add_action('reklamshop_editor',array($this,'init_editor'));
+        add_action('reklamshop_editor_full',array($this,'init_editor'));
+        add_action( 'wp_head', array($this,'storefront_remove_storefront_breadcrumbs'));
+
     }
     function require_files() {
         if ( is_page('editor') ) {
@@ -48,9 +51,13 @@ class reklamshopEditor {
             do_action('reklamshop_editor');
         }
     }
+    function storefront_remove_storefront_breadcrumbs() {
+        if(is_page('editor')) {
+            remove_action('storefront_before_content', 'woocommerce_breadcrumb', 10);
+        }
+    }
     function init_editor() {
         ?>
-        <span class="dashicons dashicons-editor-expand"></span>
         <div class="reklamshop-editor-cover">
             <div class="editor-tools-side">
                 <div class="editor-tools-row-head"></div>
@@ -193,24 +200,26 @@ class reklamshopEditor {
                     </div>
                 </div>
             </div>
+            <div class="add-ons-cover">
+                <div class="sample-font" data="times">
+                    <span>Sample Text</span>
+                </div>
+                <div class="sample-font" data="notable">
+                    <span>Sample Text</span>
+                </div>
+                <div class="sample-font" data="piedra">
+                    <span>Sample Text</span>
+                </div>
+                <div class="sample-font" data="MuseoModerno">
+                    <span>Sample Text</span>
+                </div>
+                <div class="sample-font" data="Pangolin">
+                    <span>Sample Text</span>
+                </div>
+            </div>
         </div>
         <input type="button" value="toSVG" onclick="do_save()">
         <div id="dwn"></div>
-      <br />
-            <section class="container">
-                <div class="color-pickers"></div>
-                <button id="colorPicker">Add another pickr</button>
-            </section>
-        <br />
-
-        <button id="rect">Rec</button>
-        <button id="circle">Circle</button>
-        <button id="arrow">Arrow</button>
-        <button id="freedrawing">Free Drawing</button>
-        <input type="file" id="myfile" name="myfile" accept="image/png, image/jpeg">
-
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Open Modal</button>
 
         <!-- The Modal -->
         <div id="upload-modal" class="modal">

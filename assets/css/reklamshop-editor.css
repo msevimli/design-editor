@@ -206,3 +206,40 @@
 .ecp-font-family {
     width: 107px;
 }
+.add-ons-cover {
+    width: 175px;
+    position: absolute;
+    right: 0;
+    height: 92%;
+    background-color: #23282d;
+    padding: 5px;
+}
+.sample-font {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.sample-font span {
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+.sample-font[data="times"] {
+    font-family: "Times New Roman";
+}
+.sample-font[data="notable"] {
+    font-family:"notable";
+}
+.sample-font[data="piedra"] {
+    font-family:"piedra";
+}
+.sample-font[data="MuseoModerno"] {
+    font-family:"MuseoModerno";
+}
+.sample-font[data="Pangolin"] {
+    font-family:"Pangolin";
+}
