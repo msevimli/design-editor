@@ -130,6 +130,7 @@ class reklamshopEditor {
                         </div>
                     </div>
                 </div>
+       
                 <div class="reklamshop-editor-area" id="reklamshop-editor-area">
                     <canvas id="magicEditor" height="400"></canvas>
                     <div id="editor-control-panel" class="editor-control-panel">
@@ -209,6 +210,9 @@ class reklamshopEditor {
                 </div>
             </div>
             <div class="add-ons-cover">
+                <div class="add-ons-close">
+                    <i class="fas fa-angle-double-right"></i>
+                </div>
                 <div class="fonts-container">
                     <div class="sample-font" data="times">
                         <span>Sample Text</span>

@@ -226,6 +226,15 @@
 .add-on-button:hover {
     background-color: #0f834d;
 }
+.add-ons-close {
+    position: absolute;
+    color: white;
+    background-color: #23282d;
+    left: -24px;
+    padding: 5px;
+    top: 0;
+    cursor: pointer;
+}
 .add-on-button span {
 
     -webkit-transform: rotate(270deg);

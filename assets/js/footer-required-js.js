@@ -458,7 +458,9 @@ jQuery(document).ready(function ($) {
         $('.add-ons-cover').addClass("in-display");
 
     });
-
+    $(".add-ons-close").click(function () {
+        $('.add-ons-cover').removeClass("in-display");
+    })
 });
 
 //End of jQuery
