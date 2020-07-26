@@ -200,21 +200,31 @@ class reklamshopEditor {
                     </div>
                 </div>
             </div>
+            <div class="add-ons-buttons">
+                <div class="font-button add-on-button">
+                    <span>Fonts</span>
+                </div>
+                <div class="shapes-button add-on-button">
+                    <span>Shapes</span>
+                </div>
+            </div>
             <div class="add-ons-cover">
-                <div class="sample-font" data="times">
-                    <span>Sample Text</span>
-                </div>
-                <div class="sample-font" data="notable">
-                    <span>Sample Text</span>
-                </div>
-                <div class="sample-font" data="piedra">
-                    <span>Sample Text</span>
-                </div>
-                <div class="sample-font" data="MuseoModerno">
-                    <span>Sample Text</span>
-                </div>
-                <div class="sample-font" data="Pangolin">
-                    <span>Sample Text</span>
+                <div class="fonts-container">
+                    <div class="sample-font" data="times">
+                        <span>Sample Text</span>
+                    </div>
+                    <div class="sample-font" data="notable">
+                        <span>Sample Text</span>
+                    </div>
+                    <div class="sample-font" data="piedra">
+                        <span>Sample Text</span>
+                    </div>
+                    <div class="sample-font" data="MuseoModerno">
+                        <span>Sample Text</span>
+                    </div>
+                    <div class="sample-font" data="Pangolin">
+                        <span>Sample Text</span>
+                    </div>
                 </div>
             </div>
         </div>

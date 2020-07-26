@@ -12,7 +12,9 @@
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
-
+.in-display {
+    display: block !important;
+}
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -206,6 +208,49 @@
 .ecp-font-family {
     width: 107px;
 }
+.add-ons-buttons {
+    width: 38px;
+    position: absolute;
+    right: 0;
+    height: 92%;
+
+}
+.add-on-button {
+    color: white;
+    width: 100%;
+    background-color: #23282d;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.add-on-button:hover {
+    background-color: #0f834d;
+}
+.add-on-button span {
+
+    -webkit-transform: rotate(270deg);
+    -webkit-transform-origin: left bottom;
+    -moz-transform: rotate(270deg);
+    -moz-transform-origin: left bottom;
+    -ms-transform: rotate(270deg);
+    -ms-transform-origin: left bottom;
+    -o-transform: rotate(270deg);
+    -o-transform-origin: left bottom;
+    transform: rotate(270deg);
+    transform-origin: left bottom;
+
+    position: absolute;
+    top: 47%;
+    left: 100%;
+    white-space: nowrap;
+    font-size: 22px;
+}
+.add-on-button.font-button {
+    height: 75px;
+}
+.add-on-button.shapes-button {
+    height: 87px;
+}
 .add-ons-cover {
     width: 175px;
     position: absolute;
@@ -213,6 +258,7 @@
     height: 92%;
     background-color: #23282d;
     padding: 5px;
+    display: none;
 }
 .sample-font {
     position: relative;

@@ -454,6 +454,10 @@ jQuery(document).ready(function ($) {
         }
 
     });
+    $(".font-button").click(function () {
+        $('.add-ons-cover').addClass("in-display");
+
+    });
 
 });
 
@@ -513,9 +517,9 @@ function toDataURL(src, callback, outputFormat) {
 }
 
 
-const input = document.getElementById('myfile');
+//const input = document.getElementById('myfile');
 //input.addEventListener('change', updateImageDisplay);
-input.addEventListener('change', readFile);
+//input.addEventListener('change', readFile);
 
 function updateImageDisplay(event) {
     console.log(input.value);
@@ -528,7 +532,7 @@ function updateImageDisplay(event) {
         }
     )
 }
-
+/*
 function readFile() {
 
     if (this.files && this.files[0]) {
@@ -554,7 +558,7 @@ function readFile() {
     }
 
 }
-
+*/
 
 Dropzone.autoDiscover = false;
 
@@ -573,4 +577,3 @@ myDropzone.on("queuecomplete", function(file, res) {
         modal.style.display="none";
     }
 });
-
