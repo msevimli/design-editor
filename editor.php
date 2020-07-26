@@ -130,7 +130,7 @@ class reklamshopEditor {
                         </div>
                     </div>
                 </div>
-       
+
                 <div class="reklamshop-editor-area" id="reklamshop-editor-area">
                     <canvas id="magicEditor" height="400"></canvas>
                     <div id="editor-control-panel" class="editor-control-panel">
