@@ -202,18 +202,21 @@ class reklamshopEditor {
                 </div>
             </div>
             <div class="add-ons-buttons">
-                <div class="font-button add-on-button">
+                <div class="font-button add-on-button" data="font-button">
                     <span>Fonts</span>
                 </div>
-                <div class="shapes-button add-on-button">
+                <div class="shapes-button add-on-button" data="shapes-button">
                     <span>Shapes</span>
+                </div>
+                <div class="upload-button add-on-button" data="upload-button">
+                    <span>Upload</span>
                 </div>
             </div>
             <div class="add-ons-cover">
                 <div class="add-ons-close">
                     <i class="fas fa-angle-double-right"></i>
                 </div>
-                <div class="fonts-container">
+                <div class="fonts-container add-ons-container">
                     <div class="sample-font" data="times">
                         <span>Sample Text</span>
                     </div>
@@ -229,6 +232,12 @@ class reklamshopEditor {
                     <div class="sample-font" data="Pangolin">
                         <span>Sample Text</span>
                     </div>
+                </div>
+                <div class="shapes-container add-ons-container">
+
+                </div>
+                <div class="upload-container add-ons-container">
+
                 </div>
             </div>
         </div>

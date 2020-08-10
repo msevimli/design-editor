@@ -454,13 +454,41 @@ jQuery(document).ready(function ($) {
         }
 
     });
+    /*
     $(".font-button").click(function () {
         $('.add-ons-cover').addClass("in-display");
 
     });
+    */
+
     $(".add-ons-close").click(function () {
+        clearAddOnsContainer();
+    });
+    $('.add-on-button').click(function () {
+       openAddOnsContainer($(this).attr('data'));
+    });
+    const openAddOnsContainer = function (obj) {
+        clearAddOnsContainer();
+        switch (obj) {
+            case 'font-button':
+                $('.add-ons-cover').addClass("in-display");
+                $('.fonts-container').addClass("in-display");
+                break;
+            case 'shapes-button':
+                $('.add-ons-cover').addClass("in-display");
+                $('.shapes-container').addClass("in-display");
+                break;
+            case 'upload-button' :
+                $('.add-ons-cover').addClass("in-display");
+                $('.upload-container').addClass("in-display");
+                break;
+        }
+    };
+    const clearAddOnsContainer = function () {
         $('.add-ons-cover').removeClass("in-display");
-    })
+        $('.add-ons-container').removeClass("in-display");
+        $('.add-on-button').removeClass('in-display');
+    };
 });
 
 //End of jQuery

@@ -260,6 +260,9 @@
 .add-on-button.shapes-button {
     height: 87px;
 }
+.add-on-button.upload-button {
+    height: 87px;
+}
 .add-ons-cover {
     width: 175px;
     position: absolute;
@@ -267,6 +270,9 @@
     height: 92%;
     background-color: #23282d;
     padding: 5px;
+    display: none;
+}
+.add-ons-container {
     display: none;
 }
 .sample-font {
