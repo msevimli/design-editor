@@ -186,21 +186,7 @@ class reklamshopEditor {
                     </div>
                 </div>
             </div>
-            <div class="upload-button-area">
-
-                <div id="upload-menu-button">
-
-                    <i class="fas fa-upload"></i><span> Upload</span>
-                </div>
-                <div class="upload-buttons-container" id="upload-buttons-container">
-                    <div class="upload-button-cover">
-                        <input type="button" id="upload-image" value="Image" class="green-btn">
-                    </div>
-                    <div class="upload-button-cover">
-                        <input type="button" value="Font" class="green-btn">
-                    </div>
-                </div>
-            </div>
+      
             <div class="add-ons-buttons">
                 <div class="font-button add-on-button" data="font-button">
                     <span>Fonts</span>
@@ -237,6 +223,12 @@ class reklamshopEditor {
 
                 </div>
                 <div class="upload-container add-ons-container">
+                    <div class="upload-button-cover">
+                        <input type="button" id="upload-image" value="Image" class="green-btn">
+                    </div>
+                    <div class="upload-button-cover">
+                        <input type="button" value="Font" class="green-btn">
+                    </div>
 
                 </div>
             </div>
