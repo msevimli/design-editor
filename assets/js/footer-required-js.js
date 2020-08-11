@@ -489,6 +489,19 @@ jQuery(document).ready(function ($) {
         $('.add-ons-container').removeClass("in-display");
         $('.add-on-button').removeClass('in-display');
     };
+    $('.shapes-obj').click(function (){
+        loadSVGWithoutGrouping('50perDiscount');
+    });
+    //load svg
+    var loadSVGWithoutGrouping = function(id) {
+        var elem = document.getElementById(id),
+            svgStr = elem.innerHTML;
+
+        fabric.loadSVGFromString(svgStr, function(objects) {
+            magic.editor.add.apply(canvas, objects);
+            magic.editor.renderAll();
+        });
+    };
 });
 
 //End of jQuery
@@ -550,6 +563,8 @@ function toDataURL(src, callback, outputFormat) {
 //const input = document.getElementById('myfile');
 //input.addEventListener('change', updateImageDisplay);
 //input.addEventListener('change', readFile);
+
+
 
 function updateImageDisplay(event) {
     console.log(input.value);

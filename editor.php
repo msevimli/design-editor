@@ -220,7 +220,87 @@ class reklamshopEditor {
                     </div>
                 </div>
                 <div class="shapes-container add-ons-container">
+                    <div class="shapes-obj" id="50perDiscount">
+                        <svg width="46.278mm" height="46.278mm" version="1.1" viewBox="0 0 46.278 46.278" xmlns="http://www.w3.org/2000/svg" xmlns:src="http://creativecommons.org/ns#" xmlns:src="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <!--svg  width="46.278mm" height="46.278mm" version="1.1" viewBox="0 0 46.278 46.278" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"!-->
+                            <defs>
+                                <linearGradient id="linearGradient4234" x2="1" gradientTransform="matrix(92.758 92.758 92.758 -92.758 238.37 351.95)" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#e81334" offset="0"/>
+                                    <stop stop-color="#d7132f" offset="1"/>
+                                </linearGradient>
+                                <clipPath id="clipPath4244">
+                                    <path d="m0 500h750v-500h-750z"/>
+                                </clipPath>
+                                <clipPath id="clipPath4256">
+                                    <path d="m226.38 456.7h116.09v-116.09h-116.09z"/>
+                                </clipPath>
+                                <clipPath id="clipPath4260">
+                                    <path d="m314.65 456.7-88.273-88.273c3.49-6.8 8.128-12.91 13.666-18.073l92.68 92.681c-5.163 5.538-11.273 10.174-18.073 13.665"/>
+                                </clipPath>
+                                <mask id="mask4272" x="0" y="0" width="1" height="1" maskUnits="userSpaceOnUse">
+                                    <path d="m-32768 32767h65535v-65535h-65535z" fill="url(#linearGradient4270)"/>
+                                </mask>
+                                <linearGradient id="linearGradient4270" x2="1" gradientTransform="matrix(106.35 0 0 -106.35 226.38 403.52)" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#fff" stop-opacity="0" offset="0"/>
+                                    <stop stop-color="#fff" offset="1"/>
+                                </linearGradient>
+                                <linearGradient id="linearGradient4288" x2="1" gradientTransform="matrix(106.35 0 0 -106.35 226.38 403.52)" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#fff" offset="0"/>
+                                    <stop stop-color="#fff" offset="1"/>
+                                </linearGradient>
+                                <clipPath id="clipPath4292">
+                                    <path d="m342.47 429.5c-1.827 3.376-3.953 6.562-6.322 9.548l-92.119-92.119c2.985-2.369 6.172-4.495 9.547-6.322z"/>
+                                </clipPath>
+                                <mask id="mask4304" x="0" y="0" width="1" height="1" maskUnits="userSpaceOnUse">
+                                    <path d="m-32768 32767h65535v-65535h-65535z" fill="url(#linearGradient4302)"/>
+                                </mask>
+                                <linearGradient id="linearGradient4302" x2="1" gradientTransform="matrix(98.441 0 0 -98.441 244.03 389.83)" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#fff" stop-opacity="0" offset="0"/>
+                                    <stop stop-color="#fff" offset="1"/>
+                                </linearGradient>
+                                <linearGradient id="linearGradient4320" x2="1" gradientTransform="matrix(98.441 0 0 -98.441 244.03 389.83)" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#fff" offset="0"/>
+                                    <stop stop-color="#fff" offset="1"/>
+                                </linearGradient>
+                            </defs>
+                            <metadata>
+                                <rdf:RDF>
+                                    <cc:Work rdf:about="">
+                                        <dc:format>image/svg+xml</dc:format>
+                                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                        <dc:title/>
+                                    </cc:Work>
+                                </rdf:RDF>
+                            </metadata>
+                            <g transform="matrix(.87661 0 0 .87661 2.1582 1.8849)">
+                                <g transform="matrix(.35278 0 0 -.35278 -75.557 164.2)">
+                                    <path d="m219.16 398.33c0-36.225 29.366-65.591 65.59-65.591 36.225 0 65.591 29.366 65.591 65.591 0 36.224-29.366 65.59-65.591 65.59-36.224 0-65.59-29.366-65.59-65.59" fill="url(#linearGradient4234)"/>
+                                </g>
+                                <g transform="matrix(.35278 0 0 -.35278 -75.557 164.2)">
+                                    <g clip-path="url(#clipPath4244)">
+                                        <g transform="translate(284.75 338.92)">
+                                            <path d="m0 0c32.755 0 59.404 26.648 59.404 59.404 0 32.755-26.649 59.404-59.404 59.404-32.756 0-59.404-26.649-59.404-59.404 0-32.756 26.648-59.404 59.404-59.404z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+                                        </g>
+                                        <g clip-path="url(#clipPath4256)" opacity=".10001">
+                                            <g clip-path="url(#clipPath4260)">
+                                                <g mask="url(#mask4272)">
+                                                    <path d="m314.65 456.7-88.273-88.273c3.49-6.8 8.128-12.91 13.666-18.073l92.68 92.681c-5.163 5.538-11.273 10.174-18.073 13.665" fill="url(#linearGradient4288)"/>
+                                                </g>
+                                            </g>
+                                            <g clip-path="url(#clipPath4292)">
+                                                <g mask="url(#mask4304)">
+                                                    <path d="m342.47 429.5c-1.827 3.376-3.953 6.562-6.322 9.548l-92.119-92.119c2.985-2.369 6.172-4.495 9.547-6.322z" fill="url(#linearGradient4320)"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <text x="6.5554967" y="30.816315" fill="#ffffff" font-family="'Poppins ExtraBold'" font-size="16.572px" font-weight="800" stroke-width=".35278"><tspan x="6.5554967 17.410492 28.29863" y="30.816315" stroke-width=".35278">50%</tspan></text>
+                                <text x="16.671013" y="13.79274" fill="#ffffff" font-family="'Lobster Two'" font-size="7.0769px" font-style="italic" font-weight="bold" stroke-width=".35278"><tspan x="16.671013 22.120247 25.432259 26.953796 30.584267" y="13.79274">Up To</tspan><tspan x="20.980873 25.91349" y="39.022003">Of</tspan></text>
+                            </g>
+                        </svg>
 
+                    </div>
                 </div>
                 <div class="upload-container add-ons-container">
                     <div class="upload-button-cover">
