@@ -222,6 +222,10 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 5px;
+    border-bottom-left-radius: 10px;
+}
+.add-ons-group-container-show {
+    height: auto !important;
 }
 .add-on-button:hover {
     background-color: #0f834d;
@@ -275,6 +279,17 @@
 .add-ons-container {
     display: none;
 }
+.shapes-obj {
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    cursor: pointer;
+}
+.shapes-obj svg {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
 .sample-font {
     position: relative;
     width: 100%;
@@ -288,6 +303,38 @@
     text-align: center;
     font-size: 14px;
     color: black;
+}
+.add-ons-group-title:first-child {
+    margin-top: 33px;
+}
+.add-ons-group-title {
+    position: relative;
+    width: 100%;
+    background-color: #0e0f10;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+.add-ons-group-title:hover, .add-ons-group-title:hover:after  {
+    color: #0f834d;
+}
+.add-ons-group-title:after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    /*content: "\f0dd"; */
+    content: attr(data-content);
+    font-size: 23px;
+    position: absolute;
+    right: 10px;
+    color: white;
+    top: -5px;
+}
+.add-ons-group-container {
+    background-color: #181b1a;
+    padding-top: 5px;
+    height: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 .sample-font[data="times"] {
     font-family: "Times New Roman";

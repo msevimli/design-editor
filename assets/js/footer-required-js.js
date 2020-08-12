@@ -531,6 +531,20 @@ jQuery(document).ready(function ($) {
             canvas.renderAll();
         });
     };
+    $('.add-ons-group-title').click(function () {
+       var data= $(this).attr("data");
+
+       var el =$(".add-ons-group-container[data='"+data+"']");
+       if(el.hasClass('add-ons-group-container-show')) {
+           el.removeClass('add-ons-group-container-show');
+       } else {
+           el.addClass('add-ons-group-container-show');
+
+           $(this).after().attr('data-content',"\\f0de");
+
+       }
+
+    });
 });
 
 //End of jQuery
