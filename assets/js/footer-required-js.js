@@ -189,6 +189,10 @@ jQuery(document).ready(function ($) {
         });
         return uuid;
     }
+    // key del event
+    $('body').on('keydown', function(e) {
+        if( e.which == 46 ) deleteObjects();
+    });
     function deleteObjects(){
         let activeObject = canvas.getActiveObjects();
         if (activeObject) {
@@ -490,7 +494,7 @@ jQuery(document).ready(function ($) {
         $('.add-on-button').removeClass('in-display');
     };
     $('.shapes-obj').click(function (){
-        loadSVGWithoutGrouping('50perDiscount');
+        loadSVGWithoutGrouping($(this).attr('id'));
     });
     //load svg
     var loadSVGWithoutGrouping = function(id) {
@@ -498,8 +502,33 @@ jQuery(document).ready(function ($) {
             svgStr = elem.innerHTML;
 
         fabric.loadSVGFromString(svgStr, function(objects) {
+            /*
             magic.editor.add.apply(canvas, objects);
             magic.editor.renderAll();
+             */
+            var i = 0;
+            while(obj = objects[i]){
+
+                if(obj.get('type') == "text"){
+                    var otop = obj.get('top');
+                    var oleft = obj.get('left');
+                    var thetext = obj.get('text');
+                    var thefont = obj.get('fontFamily');
+                    var color = obj.get('fill');
+                    var fontSize = obj.get('fontSize');
+                    var fweight = obj.get('fontWeight');
+                    var text1 = new fabric.IText(thetext, {top:otop, left:oleft, fill:color, fontFamily:thefont,fontSize:parseInt(fontSize),fontWeight:fweight });
+                    canvas.setActiveObject(text1);
+                    canvas.add(text1);
+                }  else {
+                    obj.hasControls = true;
+                    canvas.add(obj);
+                    canvas.bringToFront(obj);
+                }
+                i++;
+
+            }
+            canvas.renderAll();
         });
     };
 });

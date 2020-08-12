@@ -299,8 +299,16 @@ class reklamshopEditor {
                                 <text x="16.671013" y="13.79274" fill="#ffffff" font-family="'Lobster Two'" font-size="7.0769px" font-style="italic" font-weight="bold" stroke-width=".35278"><tspan x="16.671013 22.120247 25.432259 26.953796 30.584267" y="13.79274">Up To</tspan><tspan x="20.980873 25.91349" y="39.022003">Of</tspan></text>
                             </g>
                         </svg>
-
                     </div>
+                    <div class="shapes-obj" id="testSVG">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="105.082px" height="105.082px" viewBox="0 0 105.082 105.082" enable-background="new 0 0 105.082 105.082"
+                             xml:space="preserve">
+                            <circle fill="#594A42" stroke="#231F20" stroke-width="0.4904" stroke-miterlimit="10" cx="52.541" cy="52.541" r="52.296"/>
+                            <text transform="matrix(1 0 0 1 6.2666 58.8047)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="21.0694">This is test</text>
+                        </svg>
+                    </div>
+
                 </div>
                 <div class="upload-container add-ons-container">
                     <div class="upload-button-cover">
