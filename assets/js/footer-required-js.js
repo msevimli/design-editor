@@ -540,7 +540,7 @@ jQuery(document).ready(function ($) {
        } else {
            el.addClass('add-ons-group-container-show');
 
-           $(this).after().attr('data-content',"\\f0de");
+          // $(this).after().attr('data-content',"\\f0de");
 
        }
 

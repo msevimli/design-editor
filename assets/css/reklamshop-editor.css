@@ -320,8 +320,8 @@
 }
 .add-ons-group-title:after {
     font-family: "Font Awesome 5 Free"; font-weight: 900;
-    /*content: "\f0dd"; */
-    content: attr(data-content);
+    content: "\f0dd";
+    /*content: attr(data-content);*/
     font-size: 23px;
     position: absolute;
     right: 10px;
