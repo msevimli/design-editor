@@ -475,10 +475,62 @@ class reklamshopEditor
                                                 </g>
                                             </g>
                                         </g>
-                                        <text transform="matrix(1 0 0 1 83.4004 82.8179)" fill="#066D70" font-family="'MyriadPro-Bold'" font-size="29.669">QUOTE</text>
-                                        <text transform="matrix(1 0 0 1 63.8223 130.1274)"><tspan x="0" y="0" font-family="'MyriadPro-Bold'" font-size="17">Lorem Ipsum text</tspan><tspan x="21.776" y="20.4" font-family="'MyriadPro-Bold'" font-size="17">second line </tspan></text>
+                                        <text test="test att" transform="matrix(1 0 0 1 83.4004 82.8179)" fill="#066D70" font-family="'MyriadPro-Bold'" font-size="29.669">QUOTE</text>
+                                        <text  test="test att 2" transform="matrix(1 0 0 1 63.8223 130.1274)"><tspan x="0" y="0" font-family="'MyriadPro-Bold'" font-size="17">Lorem Ipsum text</tspan><tspan x="21.776" y="20.4" font-family="'MyriadPro-Bold'" font-size="17">second line </tspan></text>
                                     </g>
 </svg>
+                            </div>
+                            <div class="shapes-obj" id="comment-2">
+                                <svg
+                                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                        xmlns:cc="http://creativecommons.org/ns#"
+                                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="250"
+                                        height="150"
+                                        viewBox="0 0 66.145831 39.687501"
+                                        version="1.1"
+                                        id="svg8">
+                                    <defs
+                                            id="defs2">
+                                        <rect
+                                                x="3.7708997"
+                                                y="3.8666402"
+                                                width="56.08613"
+                                                height="32.704604"
+                                                id="rect1404" />
+                                    </defs>
+                                    <metadata
+                                            id="metadata5">
+                                        <rdf:RDF>
+                                            <cc:Work
+                                                    rdf:about="">
+                                                <dc:format>image/svg+xml</dc:format>
+                                                <dc:type
+                                                        rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                <dc:title></dc:title>
+                                            </cc:Work>
+                                        </rdf:RDF>
+                                    </metadata>
+                                    <g
+                                            id="layer1">
+                                        <text
+                                                xml:space="preserve"
+                                                id="text1402"
+                                                style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:0.92;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1404);fill:#000000;fill-opacity:1;stroke:none;"
+                                                transform="matrix(1.1816345,0,0,1.1816345,-0.72914671,-0.62552293)"><tspan
+                                                    x="3.7714844"
+                                                    y="11.484683"><tspan>first
+                                                </tspan></tspan><tspan
+                                                    x="3.7714844"
+                                                    y="21.221319"><tspan>secon
+                                                </tspan></tspan><tspan
+                                                    x="3.7714844"
+                                                    y="30.957955"><tspan>third</tspan></tspan></text>
+                                    </g>
+                                </svg>
+
                             </div>
                         </div>
                     </div>

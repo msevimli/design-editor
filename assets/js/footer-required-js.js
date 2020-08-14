@@ -510,6 +510,7 @@ jQuery(document).ready(function ($) {
             while(obj = objects[i]){
 
                 if(obj.get('type') == "text"){
+                    console.log(obj);
                     var otop = obj.get('top');
                     var oleft = obj.get('left');
                     var thetext = obj.get('text');
