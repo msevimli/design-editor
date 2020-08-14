@@ -304,8 +304,8 @@
     font-size: 14px;
     color: black;
 }
-.add-ons-group-title:first-child {
-    margin-top: 33px;
+.add-ons-group {
+    position: relative;
 }
 .add-ons-group-title {
     position: relative;
@@ -314,19 +314,20 @@
     padding: 5px;
     color: white;
     cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 .add-ons-group-title:hover, .add-ons-group-title:hover:after  {
     color: #0f834d;
 }
-.add-ons-group-title:after {
-    font-family: "Font Awesome 5 Free"; font-weight: 900;
-    content: "\f0dd";
-    /*content: attr(data-content);*/
-    font-size: 23px;
+.add-ons-group-title i {
     position: absolute;
     right: 10px;
-    color: white;
-    top: -5px;
+}
+.group-title-ico.fa-sort-up {
+    top: 12px;
 }
 .add-ons-group-container {
     background-color: #181b1a;

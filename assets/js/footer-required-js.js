@@ -535,11 +535,16 @@ jQuery(document).ready(function ($) {
        var data= $(this).attr("data");
 
        var el =$(".add-ons-group-container[data='"+data+"']");
+       //const ico = $('.group-title-ico');
+       const ico = $(this).find('i');
        if(el.hasClass('add-ons-group-container-show')) {
            el.removeClass('add-ons-group-container-show');
+           ico.removeClass('fa-sort-up');
+           ico.addClass('fa-sort-down');
        } else {
            el.addClass('add-ons-group-container-show');
-
+            ico.removeClass('fa-sort-down');
+            ico.addClass('fa-sort-up');
           // $(this).after().attr('data-content',"\\f0de");
 
        }
