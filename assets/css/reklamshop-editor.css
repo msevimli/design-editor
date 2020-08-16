@@ -100,8 +100,8 @@
 }
 .editor-tools-input {
     padding: 1px;
-    width: 50px;
-    height: 30px;
+    width: 71px;
+    height: 23px;
 }
 .editor-tools-row-head {
     position: relative;
@@ -211,6 +211,7 @@
     width: 38px;
     position: absolute;
     right: 0;
+    top:10px;
     height: 92%;
 
 }
@@ -267,10 +268,10 @@
     height: 87px;
 }
 .add-ons-cover {
-    width: 175px;
+    width: 285px;
     position: absolute;
     right: 0;
-    height: 92%;
+    height: 99%;
     background-color: #23282d;
     padding: 5px;
     display: none;

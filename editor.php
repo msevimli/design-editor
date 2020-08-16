@@ -116,19 +116,14 @@ class reklamshopEditor
             <div class="reklamshop-editor-inside">
                 <div class="editor-tools-top">
                     <div class="editor-tools-grid"></div>
-                    <div class="editor-tools-grid"><input type="color"></div>
                     <div class="editor-tools-grid">
-                        <select>
-                            <option>test 1</option>
-                            <option>test 2</option>
-                            <option>test 3</option>
-                        </select>
+                        <input type="color" id="set-background-color" value="#ffffff">
                     </div>
                     <div class="editor-tools-grid">
                         <label>Document </label>
-                        <input type="number" min="1" class="editor-tools-input">
+                        <input id="document-width" type="number" min="1" class="editor-tools-input">
                         <span>x</span>
-                        <input type="number" min="1" class="editor-tools-input">
+                        <input id="document-height" type="number" min="1" class="editor-tools-input">
                     </div>
                     <div class="editor-tools-grid">
                         <label>Zoom</label>
@@ -392,6 +387,9 @@ class reklamshopEditor
                                           font-family="'MyriadPro-Regular'" font-size="21.0694">This is test
                                     </text>
                                 </svg>
+                            </div>
+                            <div class="shapes-obj" id="offer">
+                                
                             </div>
                         </div>
                     </div>

@@ -280,6 +280,12 @@ jQuery(document).ready(function ($) {
             canvas.setZoom(val);
         }
     }
+    //set background color
+    let setBackgroundColor = document.querySelector('#set-background-color');
+    setBackgroundColor.addEventListener('input',function () {
+        canvas.backgroundColor = setBackgroundColor.value;
+        canvas.renderAll();
+    });
     //ecp-color-control
     let colorControl = document.querySelector('#ecp-color-control');
     colorControl.addEventListener('input',function () {
