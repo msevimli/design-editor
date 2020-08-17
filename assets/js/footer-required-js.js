@@ -567,6 +567,9 @@ jQuery(document).ready(function ($) {
             magic.resizeIt(docWidth,docHeight);
             magic.editor.renderAll();
         }
+        //get current sizes
+        $("#document-width").val(canvas.getWidth());
+        $("#document-height").val(canvas.getHeight());
     });
 });
 

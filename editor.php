@@ -115,21 +115,27 @@ class reklamshopEditor
 
             <div class="reklamshop-editor-inside">
                 <div class="editor-tools-top">
-                    <div class="editor-tools-grid"></div>
-                    <div class="editor-tools-grid">
+                    <div class="editor-tools-grid document-color-container editor-tools-container">
+                        Document Color
                         <input type="color" id="set-background-color" value="#ffffff">
                     </div>
-                    <div class="editor-tools-grid">
+                    <div class="editor-tools-grid document-size-container editor-tools-container">
                         <label>Document </label>
                         <input id="document-width" type="number" min="1" class="editor-tools-input document-size-input">
                         <span>x</span>
                         <input id="document-height" type="number" min="1" class="editor-tools-input document-size-input">
+                        Unit:
+                        <select>
+                            <option>px</option>
+                            <option>mm</option>
+                            <option>cm</option>
+                        </select>
                     </div>
-                    <div class="editor-tools-grid">
+                    <div class="editor-tools-grid editor-tools-container">
                         <label>Zoom</label>
                         <input type="range" id="zoom-bar" name="zoom-bar" value="1" min="0.1" max="10.1">
                     </div>
-                    <div class="editor-tools-grid">
+                    <div class="editor-tools-grid editor-tools-container">
                         <div class="editor-full-screen-ico">
                             <i class="fas fa-expand-arrows-alt"></i>
                         </div>
