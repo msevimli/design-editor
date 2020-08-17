@@ -504,8 +504,8 @@ jQuery(document).ready(function ($) {
     });
     //load svg
     var loadSVGWithoutGrouping = function(id) {
-        var elem = document.getElementById(id),
-            svgStr = elem.innerHTML;
+        var elem = document.getElementById(id);
+        svgStr = elem.innerHTML;
 
         fabric.loadSVGFromString(svgStr, function(objects) {
             /*
@@ -556,6 +556,17 @@ jQuery(document).ready(function ($) {
 
        }
 
+    });
+    //write canvas document size
+    $("#document-width").val(canvas.getWidth());
+    $("#document-height").val(canvas.getHeight());
+    $('.document-size-input').on('change',function () {
+        var docWidth = $("#document-width").val();
+        var docHeight = $("#document-height").val();
+        if(docWidth > 0 && docHeight > 0) {
+            magic.resizeIt(docWidth,docHeight);
+            magic.editor.renderAll();
+        }
     });
 });
 

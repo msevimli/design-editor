@@ -121,9 +121,9 @@ class reklamshopEditor
                     </div>
                     <div class="editor-tools-grid">
                         <label>Document </label>
-                        <input id="document-width" type="number" min="1" class="editor-tools-input">
+                        <input id="document-width" type="number" min="1" class="editor-tools-input document-size-input">
                         <span>x</span>
-                        <input id="document-height" type="number" min="1" class="editor-tools-input">
+                        <input id="document-height" type="number" min="1" class="editor-tools-input document-size-input">
                     </div>
                     <div class="editor-tools-grid">
                         <label>Zoom</label>
@@ -473,8 +473,8 @@ class reklamshopEditor
                                                 </g>
                                             </g>
                                         </g>
-                                        <text test="test att" transform="matrix(1 0 0 1 83.4004 82.8179)" fill="#066D70" font-family="'MyriadPro-Bold'" font-size="29.669">QUOTE</text>
-                                        <text  test="test att 2" transform="matrix(1 0 0 1 63.8223 130.1274)"><tspan x="0" y="0" font-family="'MyriadPro-Bold'" font-size="17">Lorem Ipsum text</tspan><tspan x="21.776" y="20.4" font-family="'MyriadPro-Bold'" font-size="17">second line </tspan></text>
+                                        <text transform="matrix(1 0 0 1 83.4004 82.8179)" fill="#066D70" font-family="'MyriadPro-Bold'" font-size="29.669">QUOTE</text>
+                                        <text transform="matrix(1 0 0 1 63.8223 130.1274)"><tspan x="0" y="0" font-family="'MyriadPro-Bold'" font-size="17">Lorem Ipsum text</tspan><tspan x="21.776" y="20.4" font-family="'MyriadPro-Bold'" font-size="17">second line </tspan></text>
                                     </g>
 </svg>
                             </div>
