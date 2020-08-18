@@ -6,7 +6,8 @@ Description:  This plugin design editor for Reklamshop
 Version: 1.0
 Author: M.Sevimli
 Author URI: https://plife.se
-License: M
+License: MIT
+Date : Juli 2020 - Present
 */
 if (!defined('ABSPATH')) {
     exit;
