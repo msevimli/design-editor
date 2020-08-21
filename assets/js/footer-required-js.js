@@ -2,10 +2,7 @@ var fontsArr = [];
 
 const magic = new magicEditor("magicEditor","reklamshop-editor-area");
 jQuery(document).ready(function ($) {
-   //"use strict";
-
-    console.log( php_vars.home );
-    console.log( php_vars.plugins_url );
+    /*
     var text = new fabric.Textbox('Hello world From Magic Editor', {
         width:250,
         cursorColor :"blue",
@@ -14,6 +11,8 @@ jQuery(document).ready(function ($) {
         fontSize:24
     });
     magic.editor.add(text);
+
+     */
     magic.resizeIt(500,300);
 
     magic.editor.on('mouse:down', function(options) {
@@ -590,13 +589,13 @@ function positionControlPanel(obj) {
    // console.log(absCoords);
 }
 
-
+/*
 fabric.Image.fromURL('https://upload.wikimedia.org/wikipedia/en/4/46/IMG_Academy_Logo.jpg', function(img) {
 
     magic.editor.add(img.set({ left: 250, top: 250 }).scale(0.25));
 
 });
-
+*/
 
 function do_save() {
     var filedata=magic.editor.toSVG(); // the SVG file is now in filedata
