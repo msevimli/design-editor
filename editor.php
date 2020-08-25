@@ -44,7 +44,7 @@ class reklamshopEditor
             wp_enqueue_script('reklamshop-editor-modal-js', plugins_url('assets/js/modal.js', __FILE__), true, 1.0, true);
 
             wp_enqueue_script('font-face-observer', plugins_url('assets/js/fontfaceobserver.js', __FILE__), true, 2.1);
-            wp_enqueue_script('open-type-js', plugins_url('assets/js/opentype.min.js', __FILE__), true, 1.3);
+            wp_enqueue_script('open-type-min-js', plugins_url('assets/js/opentype.min.js', __FILE__), true, 1.3);
 
             wp_enqueue_script('fabric-curves-text', plugins_url('assets/js/fabric.CurvesText.min.js', __FILE__), true, 0.9);
             wp_enqueue_script('footer-required-js', plugins_url('assets/js/footer-required-js.js', __FILE__), array(), 1.0, true);

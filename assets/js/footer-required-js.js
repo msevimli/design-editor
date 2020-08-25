@@ -570,6 +570,11 @@ jQuery(document).ready(function ($) {
         $("#document-width").val(canvas.getWidth());
         $("#document-height").val(canvas.getHeight());
     });
+    //sample font
+    $('.sample-font').click(function () {
+       var font = $(this).attr('data');
+       console.log(font);
+    });
 });
 
 //End of jQuery
