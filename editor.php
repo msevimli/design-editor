@@ -17,14 +17,10 @@ class reklamshopEditor
 {
     public function __construct()
     {
-        add_action('wp_enqueue_scripts', array($this, 'require_files'));
-        add_action('the_content', array($this, 'hook_editor'));
-        //add_action('reklamshop_editor',array($this,'init_editor'));
-        add_action('reklamshop_editor_full', array($this, 'init_editor'));
-        add_action('wp_head', array($this, 'storefront_remove_storefront_breadcrumbs'));
-
+            add_action('wp_enqueue_scripts', array($this, 'require_files'));
+            add_action('reklamshop_editor_full', array($this, 'init_editor'));
+            add_action('wp_head', array($this, 'storefront_remove_storefront_breadcrumbs'));
     }
-
     function require_files()
     {
         if (is_page('editor')) {
@@ -49,13 +45,6 @@ class reklamshopEditor
             wp_enqueue_script('fabric-curves-text', plugins_url('assets/js/fabric.CurvesText.min.js', __FILE__), true, 0.9);
             wp_enqueue_script('footer-required-js', plugins_url('assets/js/footer-required-js.js', __FILE__), array(), 1.0, true);
             wp_localize_script('footer-required-js', 'php_vars', $dataToBePassed);
-        }
-    }
-
-    function hook_editor()
-    {
-        if (is_page('editor')) {
-            do_action('reklamshop_editor');
         }
     }
 
@@ -573,3 +562,4 @@ class reklamshopEditor
 }
 
 new reklamshopEditor();
+
