@@ -66,7 +66,7 @@ class reklamshopEditor
                         <i class="fas fa-mouse-pointer"></i>
                     </div>
                     <div class="editor-tools-item" data="multi-selection">
-                        <i class="far fa-object-ungroup"></i>
+                        <i class="fas fa-object-ungroup"></i>
                     </div>
                 </div>
                 <div class="editor-tools-row">
@@ -90,7 +90,7 @@ class reklamshopEditor
                         <i class="fas fa-object-ungroup"></i>
                     </div>
                     <div class="editor-tools-item" data="circle">
-                        <i class="far fa-circle"></i>
+                        <i class="fas fa-circle"></i>
                     </div>
                 </div>
                 <div class="editor-tools-row">
