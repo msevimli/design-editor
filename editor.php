@@ -45,6 +45,9 @@ class reklamshopEditor
             wp_enqueue_script('fabric-curves-text', plugins_url('assets/js/fabric.CurvesText.min.js', __FILE__), true, 0.9);
             wp_enqueue_script('footer-required-js', plugins_url('assets/js/footer-required-js.js', __FILE__), array(), 1.0, true);
             wp_localize_script('footer-required-js', 'php_vars', $dataToBePassed);
+
+            /* customize stylesheet */
+            wp_enqueue_style('roll-up', plugins_url('assets/editor-tools/roll-up/roll-up.css', __FILE__), true, 1.0);
         }
     }
 
@@ -103,37 +106,41 @@ class reklamshopEditor
                 </div>
             </div>
 
-            <div class="reklamshop-editor-inside">
-                <div class="editor-tools-top">
-                    <div class="editor-tools-grid document-color-container editor-tools-container">
-                        Document Color
-                        <input type="color" id="set-background-color" value="#ffffff">
-                    </div>
-                    <div class="editor-tools-grid document-size-container editor-tools-container">
-                        <label>Document </label>
-                        <input id="document-width" type="number" min="1" class="editor-tools-input document-size-input">
-                        <span>x</span>
-                        <input id="document-height" type="number" min="1" class="editor-tools-input document-size-input">
-                        Unit:
-                        <select>
-                            <option>px</option>
-                            <option>mm</option>
-                            <option>cm</option>
-                        </select>
-                    </div>
-                    <div class="editor-tools-grid editor-tools-container">
-                        <label>Zoom</label>
-                        <input type="range" id="zoom-bar" name="zoom-bar" value="1" min="0.1" max="10.1">
-                    </div>
-                    <div class="editor-tools-grid editor-tools-container">
-                        <div class="editor-full-screen-ico">
-                            <i class="fas fa-expand-arrows-alt"></i>
-                        </div>
+            <div class="editor-tools-top">
+                <div class="editor-tools-grid document-color-container editor-tools-container">
+                    Document Color
+                    <input type="color" id="set-background-color" value="#ffffff">
+                </div>
+                <div class="editor-tools-grid document-size-container editor-tools-container">
+                    <label>Document </label>
+                    <input id="document-width" type="number" min="1" class="editor-tools-input document-size-input">
+                    <span>x</span>
+                    <input id="document-height" type="number" min="1" class="editor-tools-input document-size-input">
+                    Unit:
+                    <select>
+                        <option>px</option>
+                        <option>mm</option>
+                        <option>cm</option>
+                    </select>
+                </div>
+                <div class="editor-tools-grid editor-tools-container">
+                    <label>Zoom</label>
+                    <input type="range" id="zoom-bar" name="zoom-bar" value="1" min="0.1" max="10.1">
+                </div>
+                <div class="editor-tools-grid editor-tools-container">
+                    <div class="editor-full-screen-ico">
+                        <i class="fas fa-expand-arrows-alt"></i>
                     </div>
                 </div>
+            </div>
+
+            <div class="reklamshop-editor-inside">
+
 
                 <div class="reklamshop-editor-area" id="reklamshop-editor-area">
+                    <div class="editor-top"></div>
                     <canvas id="magicEditor" height="400"></canvas>
+                    <div class="editor-bottom"></div>
                     <div id="editor-control-panel" class="editor-control-panel">
                         <div class="ecp-row">
                             <div class="ecp-icon">
